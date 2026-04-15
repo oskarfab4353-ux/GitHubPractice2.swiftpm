@@ -10,12 +10,24 @@ struct ContentView: View {
         Text("\(answer)")
         Button("Add") {
             answer = number1 + number2
+                
         }
+        .buttonStyle(.bordered)
+        .font(.largeTitle)
+        .foregroundStyle(.blue)
+        
         Button("Mutiply") {
             answer = number1 * number2
         }
+        .buttonStyle(.bordered)
+        .font(.largeTitle)
+        .foregroundStyle(.red)
+        
         Button("Subtract") {
             answer = number1 - number2
         }
+        .buttonStyle(.bordered)
+        .font(.largeTitle)
+        .foregroundStyle(.purple)
     }
 }
