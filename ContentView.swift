@@ -7,14 +7,13 @@ struct ContentView: View {
     var body: some View {
         TextField("Enter first number", value: $number1, format: .number)
             .textFieldStyle(.roundedBorder)
-            .foregroundStyle(.blue)
+            .foregroundStyle(.pink)
         TextField("enter another number", value: $number2, format: .number)
             .textFieldStyle(.roundedBorder)
-            .foregroundStyle(.blue)
+            .foregroundStyle(.pink)
         Text("\(answer)")
         Button("Add") {
             answer = number1 + number2
-                
         }
         .buttonStyle(.bordered)
         .font(.largeTitle)
@@ -33,5 +32,12 @@ struct ContentView: View {
         .buttonStyle(.bordered)
         .font(.largeTitle)
         .foregroundStyle(.purple)
+        
+        Button("Subtract") {
+            answer = number1/number2
+        }
+        .buttonStyle(.bordered)
+        .font(.largeTitle)
+        .foregroundStyle(.pink)
     }
 }
