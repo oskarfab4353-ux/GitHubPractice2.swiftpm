@@ -8,7 +8,6 @@ struct ContentView: View {
         TextField("Enter first number", value: $number1, format: .number)
         TextField("enter another number", value: $number2, format: .number)
         Text("\(answer)")
-        TextField("Enter another number", value: $number2, format: .number)
         Button("Add") {
             answer = number1 + number2
         }
