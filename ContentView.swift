@@ -10,7 +10,7 @@ struct ContentView: View {
         Text("\(answer)")
         TextField("Enter another number", value: $number2, format: .number)
         Button("Add") {
-            \(answer = number1 + number2)
+            answer = number1 + number2
         }
     }
 }
